@@ -3,15 +3,15 @@ import { FaCheckCircle } from 'react-icons/fa';
 
 const ForYouSection = () => {
   const items = [
-    "Are tired of being stuck in a loop of surface-level advice, buying course after course... book after book, and still not making the progress you want.",
-    "Can’t find the “niche” to commit to and you constantly feel that no matter what you decide to make content on, you will be closing the door on every other interest and passion you have.",
-    "Are tired of always learning new information and listening to others tell you what you have to do but not having a step-by-step plan and the drive to act on your goals.",
+    "Estas aburrido de depender de tus conocidos para conseguir pacientes",
+    "Te hiciste un Instagram, hiciste que tus amigos lo compartieran y apenas te llegaron pacientes",
+    "Quieres libertad para organizar tus horarios de atención",
   ];
 
   return (
     <div className="bg-black text-white p-8">
       <h2 className="text-3xl font-bold mb-6">
-        THIS IS <span className="text-green-500">FOR YOU</span> IF YOU...
+        ESTO ES <span className="text-green-500">PARA TÍ</span> SÍ...
       </h2>
       <div className="space-y-6">
         {items.map((item, index) => (

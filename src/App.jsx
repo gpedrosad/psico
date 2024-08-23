@@ -10,6 +10,8 @@ import BenefitsSection from './components/BenefitsSection'
 import Testimonials from './components/Testimonials'
 import ForYouSection from './components/ForYouSection'
 import MarqueeText from './components/MarqueeText'
+import Pricing from './components/Pricing'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,7 +21,6 @@ function App() {
     
     <HeroBanner/>
     <Bullet/>
-    <FAQ/>
     <AboutMe/>
     <BenefitsSection/>
     <Testimonials/>
@@ -28,6 +29,10 @@ function App() {
 </button>
 <ForYouSection/>
 <MarqueeText/>
+<Pricing/>
+<FAQ/>
+<Footer/>
+
     
     
         

@@ -7,9 +7,9 @@ const HeroBanner = () => {
         
         {/* Primera Columna (Texto) */}
         <div className="flex-1 p-8">
-          <h1 className="text-4xl font-bold mb-4">Headline enfatiza valor, resultado o transformación</h1>
+          <h1 className="text-4xl font-bold mb-4">Llena tu consulta de pacientes</h1>
           <p className="text-lg text-gray-700 mb-4">
-            Sub explica claramente que le damos para que obtenga el resultado
+              Creamos tu estrategia y página web para darla a conocer con publicidad en redes sociales
           </p>
           <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">
             Llamada a la Acción

@@ -1,14 +1,38 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
-const FAQItem = ({ question, answer }) => {
+const FAQItem = ({ question, answer, index }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const itemRef = useRef(null);
 
   const toggleOpen = () => setIsOpen(!isOpen);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationDelay = `${index * 0.3}s`;
+          entry.target.classList.add('fade-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+    });
+
+    if (itemRef.current) {
+      observer.observe(itemRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [index]);
+
   return (
-    <div className="border-b border-gray-300 py-4">
+    <div
+      ref={itemRef}
+      className="border-b border-gray-300 py-4 opacity-0 transform translate-y-10 transition-opacity transition-transform duration-500 ease-in-out"
+    >
       <div
-        className="flex justify-between items-center cursor-pointer"
+        className="flex justify-between items-center cursor-pointer p-5"
         onClick={toggleOpen}
       >
         <h3 className="text-lg font-medium text-gray-800">{question}</h3>
@@ -29,30 +53,30 @@ const FAQItem = ({ question, answer }) => {
           />
         </svg>
       </div>
-      {isOpen && <p className="mt-2 text-gray-600">{answer}</p>}
+      {isOpen && <p className="mt-2 text-gray-600 p-4">{answer}</p>}
     </div>
   );
 };
 
 const FAQ = () => {
-    const faqs = [
-        {
-          question: 'Who is this for?',
-          answer:
-            'Any Healthcare Provider Looking to Grow: If you’re looking to increase your patients as a healthcare professional or a Clinic, this service is for you.',
-        },
-        {
-      question: 'What kind of results can I expect?',
+  const faqs = [
+    {
+      question: 'Para quién es esto?',
+      answer:
+        'Any Healthcare Provider Looking to Grow: If you’re looking to increase your patients as a healthcare professional or a Clinic, this service is for you.',
+    },
+    {
+      question: 'Qué resultados puedo esperar?',
       answer:
         'Our goal is to increase your number of patients and boost your practice’s growth',
     },
     {
-      question: 'What if I don’t have time to be involved?',
+      question: 'Qué pasa si no tengo el tiempo para hacerlo?',
       answer:
         'I handle everything for you, with minimal input needed on your part. I just need to check in with you for approval at key points.',
     },
     {
-      question: 'How do I get started?',
+      question: 'Cómo puedo empezar?',
       answer:
         'Simply contact me to schedule an initial free consultation. We’ll discuss your needs, goals, and how i can help you grow your practice through a customized landing page and marketing strategies.',
     },
@@ -67,7 +91,7 @@ const FAQ = () => {
     <div className="max-w-3xl mx-auto py-10">
       <h2 className="text-3xl font-extrabold text-gray-800 mb-6">Preguntas Frecuentes</h2>
       {faqs.map((faq, index) => (
-        <FAQItem key={index} question={faq.question} answer={faq.answer} />
+        <FAQItem key={index} question={faq.question} answer={faq.answer} index={index} />
       ))}
     </div>
   );
