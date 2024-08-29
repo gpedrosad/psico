@@ -47,20 +47,50 @@ const AboutMe = () => {
             />
           </div>
           <div ref={textRef} className="md:w-3/4 opacity-0">
-            <p className="text-lg text-gray-700 mb-4">Hi, I am Gonzalo!</p>
-            <p className="text-lg text-gray-700 mb-4 text-left">
-              Licensed Psychologist, Software Development Student and a Marketing Enthusiast from Chile living in Buenos Aires, Argentina. 
-            </p>
-            <p className="text-lg text-gray-700 mb-4 text-left">
-              I run my own online psychology practice, BUT more important... 
-              <br></br>I help others establish and grow their practices!
-            </p>
-            <p className="text-lg text-gray-700 mb-4 text-left">
-              Mi enfoque se basa en [método, filosofía o enfoque], y siempre estoy en busca de nuevas formas de innovar y ofrecer soluciones que realmente marquen la diferencia. Creo firmemente en [alguna creencia o valor fundamental relacionado con tu trabajo].
-            </p>
-            <p className="text-lg text-gray-700 text-left">
-              En mi tiempo libre, disfruto de [hobbies o intereses personales], lo que me ayuda a mantener un equilibrio saludable entre el trabajo y la vida personal. Estoy emocionado de conectar contigo y explorar cómo puedo ayudarte a alcanzar tus metas.
-            </p>
+          <p class="text-xl text-gray-700 mb-4">Hola, soy Gonzalo.</p>
+
+<p class="text-lg text-gray-700 mb-4 text-left">
+  Soy <strong>Psicólogo Clínico</strong>, estudiante de Desarrollo de Software y entusiasta del Marketing.
+</p>
+
+<p class="text-lg text-gray-700 mb-4 text-left">
+  Nací en Chile y ahora vivo en Buenos Aires atendiendo de forma online.
+</p>
+
+<p class="text-lg text-gray-700 mb-4 text-left">
+  Tengo mi propia consulta online, pero lo más importante es que <strong>ayudo a otros a convertirse en profesionales independientes</strong>.
+</p>
+
+<p class="text-lg text-gray-700 mb-4 text-left">
+  Cuando me titulé, no tenía idea de cómo conseguir pacientes. Además, Las ofertas laborales eran pocas y mal pagadas. 
+</p>
+
+<p class="text-lg text-gray-700 mb-4 text-left">
+  Desanimado, <strong>busqué opciones en otras áreas no relacionadas a lo que estudié</strong>, vendiendo productos online.
+</p>
+
+<p class="text-lg text-gray-700 mb-4 text-left">
+  Ahí tuve un problema parecido: <strong>cómo lograr ventas?</strong>
+</p>
+
+<p class="text-lg text-gray-700 mb-4 text-left">
+  Comencé a estudiar marketing y publicidad para redes sociales. Ahí todo cambió...
+</p>
+
+<p class="text-lg text-gray-700 mb-4 text-left">
+  <strong>Las ventas comenzaron a llegar TODOS LOS DÍAS!</strong>. Mi negocio despegó, ahí fue cuando pensé: <em>esto podría funcionar también para mi práctica profesional?</em>
+</p>
+
+<p class="text-lg text-gray-700 mb-4 text-left">
+  Después de dos años sin ejercer, sentí inseguridad. <strong>Consideré estudiar más</strong>, pero me di cuenta de que incluso con miles de títulos, muchos no consiguen pacientes.
+</p>
+
+<p class="text-lg text-gray-700 mb-4 text-left">
+  Entonces, creé mi página web y comencé. <strong>y desde entonces, no he parado!</strong>
+</p>
+
+
+            
           </div>
         </div>
       </div>

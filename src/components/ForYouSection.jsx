@@ -2,12 +2,13 @@ import React from 'react';
 import { FaCheckCircle } from 'react-icons/fa';
 
 const ForYouSection = () => {
-  const items = [
-    "Estas aburrido de depender de tus conocidos para conseguir pacientes",
-    "Te hiciste un Instagram, hiciste que tus amigos lo compartieran y apenas te llegaron pacientes",
-    "Quieres libertad para organizar tus horarios de atención",
-  ];
-
+    const items = [
+        "Te hiciste un Instagram, hiciste que tus amigos lo compartieran y apenas te llegaron pacientes",
+        "Te preocupa la inestabilidad económica y quieres asegurar un flujo constante de pacientes",
+        "Sientes que buscar pacientes te agota y prefieres centrarte en lo que realmente amas: ayudar a otros",
+        "Te sientes abrumado por la idea de cómo atraer pacientes y deseas un plan claro y efectivo",
+        "Buscas un enfoque personalizado que te guíe hacia el éxito como profesional independiente",
+    ];
   return (
     <div className="bg-black text-white p-8">
       <h2 className="text-3xl font-bold mb-6">

@@ -29,14 +29,16 @@ const Bullet = () => {
     <div className="bg-gray-100 py-10">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-3xl font-extrabold text-gray-800 text-center mb-8">Beneficios de Nuestro Servicio</h2>
-        <ul className="space-y-6">
+        <ul className="space-y-6 text-left">
           {[
-            'fuller schedule, leading to a more stable, reducing financial stress.',
-            'Stop worrying solely on referrals from friends, family, or existing patients to grow your practice.',
-            'No more wondering where and how to get new patients.',
-            'Freedom to manage your practice from anywhere, at any time.',
-            'No more Anxiety about overspending on ineffective marketing efforts that don’t deliver results.',
-            'Plan de Acción Personalizado Según tus Necesidades.',
+            'No más dudas sobre tu futuro! Asegura tu estabilidad economica con más pacientes',
+            'Dejar de depender de conocidos para conseguir pacientes',
+            'Libertad para manejar tus consultas, donde y cuando quieras',
+            'Elimina el agotamiento; consigue pacientes sin esfuerzo',
+            'Transforma la pasión de tu carrera en una práctica independiente y exitosa',
+            'Olvídate de las preocupaciones; consigue pacientes de manera constante y segura',
+            'Un plan personalizado, diseñado exclusivamente para tu éxito como profesional independiente',
+
           ].map((text, index) => (
             <li
               key={index}

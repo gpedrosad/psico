@@ -63,12 +63,12 @@ const FAQ = () => {
     {
       question: 'Para quién es esto?',
       answer:
-        'Any Healthcare Provider Looking to Grow: If you’re looking to increase your patients as a healthcare professional or a Clinic, this service is for you.',
+        'Cualquier proveedor de servicios de salud que busque crecer: Si estás buscando aumentar tu número de pacientes como profesional de la salud o como clínica, este servicio es para ti.',
     },
     {
       question: 'Qué resultados puedo esperar?',
       answer:
-        'Our goal is to increase your number of patients and boost your practice’s growth',
+        'Nuestro objetivo es aumentar tu número de pacientes y potenciar el crecimiento de tu práctica.',
     },
     {
       question: 'Qué pasa si no tengo el tiempo para hacerlo?',
@@ -81,9 +81,9 @@ const FAQ = () => {
         'Simply contact me to schedule an initial free consultation. We’ll discuss your needs, goals, and how i can help you grow your practice through a customized landing page and marketing strategies.',
     },
     {
-      question: '¿Tienen descuentos por volumen?',
+      question: 'Es necesario tener una web para conseguir pacientes?',
       answer:
-        'Sí, ofrecemos descuentos por compras al por mayor. Por favor, contacta con nuestro equipo de ventas para más detalles.',
+        'Una página web profesional es clave para establecer tu presencia en línea y generar confianza en potenciales pacientes. Es tu tarjeta de presentación digital y un lugar donde los pacientes pueden conocerte, entender tus servicios y agendar fácilmente.',
     },
   ];
 

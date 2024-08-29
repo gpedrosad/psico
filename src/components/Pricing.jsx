@@ -8,20 +8,20 @@ const Pricing = () => {
       title: 'Básico',
       price: '$450,000',
       features: ['Plan de marketing', 'Landing page optimizada', '2 sesiones de acompañamiento'],
-      buttonText: 'Choose Basic',
+      buttonText: 'Elegir Básico',
     },
     {
       title: 'Estándar',
       price: '$650,000',
       features: ['Plan de marketing', 'Landing page optimizada', '1 Campaña de captación de clientes', '4 sesiones de acompañamiento'],
-      buttonText: 'Choose Standard',
+      buttonText: 'Elegir Estándar',
       highlighted: true, // Para resaltar la tarjeta
     },
     {
       title: 'Clínica Premium',
       price: '$2,600,000',
       features: ['Plan de marketing', 'Página web optimizada', 'Sistema de agendamiento', 'Campaña captación de clientes', 'Feature 5'],
-      buttonText: 'Choose Premium',
+      buttonText: 'Elegir Premium',
     },
   ];
 
@@ -50,7 +50,7 @@ const Pricing = () => {
   return (
     <div className="max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <h2 className="text-3xl font-extrabold text-center text-gray-900 mb-6">
-        Pricing Plans
+        Servicios
       </h2>
       <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6">
         {plans.map((plan, index) => (
