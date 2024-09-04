@@ -18,11 +18,14 @@ const HeroBanner = () => {
 
         {/* Segunda Columna (Imagen) */}
         <div className="flex-1 p-8">
-          <img 
-            src="https://via.placeholder.com/600" 
-            alt="Hero Image" 
-            className="w-full h-auto object-cover"
-          />
+        <div className="relative w-full h-auto">
+  <img 
+    src="public/images/yo.webp" 
+    alt="Hero Image" 
+    className="w-full h-auto object-cover rounded-2xl"
+  />
+  <div className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-gray-100 to-transparent"></div>
+</div>
         </div>
       </div>
     </div>

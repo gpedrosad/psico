@@ -52,12 +52,12 @@ const Pricing = () => {
       <h2 className="text-3xl font-extrabold text-center text-gray-900 mb-6">
         Servicios
       </h2>
-      <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6">
+      <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6 px-14">
         {plans.map((plan, index) => (
           <div
             key={index}
             ref={(el) => (plansRef.current[index] = el)}
-            className={`flex flex-col p-6 rounded-lg shadow-lg opacity-0 transform translate-y-10 transition-opacity transition-transform duration-500 ease-in-out ${
+            className={`flex flex-col p-6 rounded-lg shadow-xl opacity-0 transform translate-y-10 transition-opacity transition-transform duration-500 ease-in-out ${
               plan.highlighted ? 'bg-blue-500 text-white' : 'bg-white text-gray-900'
             } w-full md:w-1/3`}
           >

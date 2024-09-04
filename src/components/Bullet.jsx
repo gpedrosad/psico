@@ -34,7 +34,6 @@ const Bullet = () => {
             'No más dudas sobre tu futuro! Asegura tu estabilidad economica con más pacientes',
             'Dejar de depender de conocidos para conseguir pacientes',
             'Libertad para manejar tus consultas, donde y cuando quieras',
-            'Elimina el agotamiento; consigue pacientes sin esfuerzo',
             'Transforma la pasión de tu carrera en una práctica independiente y exitosa',
             'Olvídate de las preocupaciones; consigue pacientes de manera constante y segura',
             'Un plan personalizado, diseñado exclusivamente para tu éxito como profesional independiente',

@@ -16,7 +16,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="mt-4 text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Ansiosamente. Todos los derechos reservados.</p>
         </div>
         <div className="mt-2 text-gray-400">
           <p>

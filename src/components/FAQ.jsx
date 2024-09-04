@@ -73,17 +73,17 @@ const FAQ = () => {
     {
       question: 'Qué pasa si no tengo el tiempo para hacerlo?',
       answer:
-        'I handle everything for you, with minimal input needed on your part. I just need to check in with you for approval at key points.',
+        'Yo me encargo de todo por ti, con mínima participación de tu parte. Solo necesito consultarte para tu aprobación en puntos clave.',
     },
     {
       question: 'Cómo puedo empezar?',
       answer:
-        'Simply contact me to schedule an initial free consultation. We’ll discuss your needs, goals, and how i can help you grow your practice through a customized landing page and marketing strategies.',
+        'Simplemente contáctame para agendar una consulta inicial gratuita. Hablaremos sobre tus necesidades, objetivos y cómo puedo ayudarte a hacer crecer tu práctica a través de una página de aterrizaje personalizada y estrategias de marketing.',
     },
     {
-      question: 'Es necesario tener una web para conseguir pacientes?',
+      question: 'Es necesaria una página para conseguir pacientes?',
       answer:
-        'Una página web profesional es clave para establecer tu presencia en línea y generar confianza en potenciales pacientes. Es tu tarjeta de presentación digital y un lugar donde los pacientes pueden conocerte, entender tus servicios y agendar fácilmente.',
+        'Una página web profesional es clave para tu presencia online y generar confianza en potenciales pacientes. Es tu tarjeta de presentación digital y un lugar donde los pacientes pueden conocerte, entender tus servicios y agendar fácilmente.',
     },
   ];
 
