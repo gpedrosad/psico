@@ -12,7 +12,7 @@ const HeroBanner = () => {
               Creamos tu estrategia y página web para darla a conocer con publicidad en redes sociales
           </p>
           <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">
-            Llamada a la Acción
+          Agenda tu consulta gratuita ahora
           </button>
         </div>
 
