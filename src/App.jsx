@@ -12,6 +12,9 @@ import Pricing from './components/Pricing'
 import Footer from './components/Footer'
 import CounterEffect from './components/CounterEffect'
 import BulletTerapia from './components/BulletTerapia'
+import ServicioTerapia from './components/ServicioTerapia'
+import BeneficiosTerapia from './components/BeneficiosTerapia'
+import FAQTerapia from './components/FAQTerapia'
 
 // Página principal vacía
 function Home() {
@@ -20,6 +23,9 @@ function Home() {
     <MarqueeText />
     <CounterEffect/>
     <BulletTerapia/>
+    <ServicioTerapia/>
+    <BeneficiosTerapia/>
+    <FAQTerapia/>
     </>
 
   )

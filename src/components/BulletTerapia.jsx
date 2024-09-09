@@ -29,7 +29,7 @@ const BulletTerapia = () => {
     'Sentir ganas de llorar repentinamente, sin grandes motivos.',
     'Sentir que las emociones te controlan y no sentirse capaz de gestionarlas efectivamente.',
     'Pensar muy negativamente de uno mismo o de los demás.',
-    'Caer en hábitos poco saludables, como comer mal, dejar de hacer ejercicio, evitar juntas sociales, dormir mal o tarde, entre otros.',
+    'Caer en hábitos poco saludables, dejar de ejercitarse, evitar juntas, mal dormir, entre otros.',
     'No tener ánimo ni esperanza en el futuro.',
   ];
 
@@ -47,7 +47,7 @@ const BulletTerapia = () => {
               className="flex items-start opacity-0 transform translate-y-10"
             >
               <svg
-                className="h-6 w-6 text-red-500 mr-3"
+                className="h-6 w-6 text-green-500 mr-3"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
