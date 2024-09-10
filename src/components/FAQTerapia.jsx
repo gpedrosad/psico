@@ -53,7 +53,7 @@ const FAQItem = ({ question, answer, index }) => {
           />
         </svg>
       </div>
-      {isOpen && <p className="mt-2 text-gray-600 p-4 bg-gray-50 rounded-lg">{answer}</p>}
+      {isOpen && <p className="mt-2 text-gray-600 p-4 rounded-lg">{answer}</p>}
     </div>
   );
 };

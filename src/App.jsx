@@ -15,14 +15,21 @@ import BulletTerapia from './components/BulletTerapia'
 import ServicioTerapia from './components/ServicioTerapia'
 import BeneficiosTerapia from './components/BeneficiosTerapia'
 import FAQTerapia from './components/FAQTerapia'
+import AboutMeTerapia from './components/AboutMeTerapia'
+import HeroTerapia from './components/HeroTerapia'
 
 // Página principal vacía
 function Home() {
   return (
     <>
+    <HeroTerapia/>
     <MarqueeText />
     <CounterEffect/>
     <BulletTerapia/>
+    <AboutMeTerapia/>
+    <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+        Agendar
+      </button>
     <ServicioTerapia/>
     <BeneficiosTerapia/>
     <FAQTerapia/>
