@@ -23,7 +23,7 @@ function Home() {
   return (
     <>
     <HeroTerapia/>
-    <MarqueeText />
+    {/*<MarqueeText />*/}
     <CounterEffect/>
     <BulletTerapia/>
     <AboutMeTerapia/>

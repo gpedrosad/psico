@@ -36,7 +36,7 @@ const AboutMeTerapia = () => {
     <div className="bg-white py-10">
       <div className="max-w-4xl mx-auto px-6">
         <div className="flex flex-col items-center text-center">
-          <h2 ref={titleRef} className="text-3xl font-extrabold text-gray-800 mb-6 opacity-0">
+          <h2 ref={titleRef} className="text-2xl font-extrabold text-gray-800 mb-6 opacity-0">
             Pero primero... ¿Quién soy? 🧐
           </h2>
           <div ref={imgRef} className="mb-6 opacity-0">
