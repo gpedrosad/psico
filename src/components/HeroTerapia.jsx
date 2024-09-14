@@ -7,7 +7,7 @@ const HeroTerapia = () => {
         
         {/* Primera Columna (Texto) */}
         <div className="flex-1 p-8">
-          <h1 className="text-4xl font-bold mb-4">Recupera tu bienestar emocional</h1>
+        <h1 className="text-3xl font-bold mb-4">Recupera tu bienestar emocional</h1>          
           <p className="text-lg text-gray-700 mb-4">
           Terapia profesional para superar la depresión y la ansiedad
           </p>

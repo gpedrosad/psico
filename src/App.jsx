@@ -67,7 +67,7 @@ function Home() {
     Agenda tu primera sesión
   </button>
 </section>
-    <Footer/>
+<Footer/>
     </>
 
   )

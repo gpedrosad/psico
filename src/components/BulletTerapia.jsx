@@ -37,7 +37,7 @@ const BulletTerapia = () => {
     <div className="bg-gray-100 py-10">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-3xl font-extrabold text-gray-800 text-center mb-8">
-          Señales Frecuentes para Ir a Terapia
+          Señales para ir a terapia
         </h2>
         <ul className="space-y-6 text-left">
           {therapySignals.map((text, index) => (
@@ -46,20 +46,22 @@ const BulletTerapia = () => {
               ref={(el) => (elementsRef.current[index] = el)}
               className="flex items-start opacity-0 transform translate-y-10"
             >
-              <svg
-                className="h-6 w-6 text-green-500 mr-3"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <p className="text-lg text-gray-700">{text}</p>
+              <div className="flex-shrink-0 h-8 w-8 flex items-center justify-center">
+                <svg
+                  className="h-full w-full text-green-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+              <p className="ml-3 text-lg text-gray-700">{text}</p>
             </li>
           ))}
         </ul>

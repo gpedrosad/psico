@@ -57,27 +57,7 @@ const AboutMeTerapia = () => {
             <p className="text-lg text-gray-700 mb-4 text-left">
               Tengo mi propia consulta online, pero lo más importante es que <strong>ayudo a otros a convertirse en profesionales independientes</strong>.
             </p>
-            <p className="text-lg text-gray-700 mb-4 text-left">
-              Cuando me titulé, no tenía idea de cómo conseguir pacientes. Las ofertas laborales eran pocas y mal pagadas.
-            </p>
-            <p className="text-lg text-gray-700 mb-4 text-left">
-              Desanimado, <strong>busqué opciones en otras áreas no relacionadas a lo que estudié</strong>, vendiendo productos online.
-            </p>
-            <p className="text-lg text-gray-700 mb-4 text-left">
-              Ahí tuve un problema parecido: <strong>¿cómo lograr ventas?</strong>
-            </p>
-            <p className="text-lg text-gray-700 mb-4 text-left">
-              Comencé a estudiar marketing y publicidad para redes sociales. Ahí todo cambió...
-            </p>
-            <p className="text-lg text-gray-700 mb-4 text-left">
-              <strong>Las ventas comenzaron a llegar TODOS LOS DÍAS!</strong>. Mi negocio despegó, ahí fue cuando pensé: <em>¿esto podría funcionar también para mi práctica profesional?</em>
-            </p>
-            <p className="text-lg text-gray-700 mb-4 text-left">
-              Después de dos años sin ejercer, sentí inseguridad. <strong>Consideré estudiar más</strong>, pero me di cuenta de que incluso con miles de títulos, muchos no consiguen pacientes.
-            </p>
-            <p className="text-lg text-gray-700 mb-4 text-left">
-              Entonces, creé mi página web y comencé. <strong>¡Y desde entonces, no he parado!</strong>
-            </p>
+            
           </div>
         </div>
       </div>

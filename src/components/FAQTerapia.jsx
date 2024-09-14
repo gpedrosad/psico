@@ -78,12 +78,12 @@ const FAQTerapia = () => {
     {
       question: '¿Y si no me siento cómodo en terapia?',
       answer:
-        'Es normal sentirse nervioso al inicio, pero el terapeuta está capacitado para crear un espacio seguro y sin juicios. Si después de algunas sesiones no te sientes cómodo, puedes cambiar de terapeuta hasta encontrar alguien con quien conectes mejor.',
+        'Es normal sentirse nervioso al inicio, pero la principal intención es crear un espacio seguro y sin juicios.',
     },
     {
-      question: '¿La terapia es costosa?',
+      question: '¿La terapia es muy cara?',
       answer:
-        'El costo de la terapia puede variar, pero es una inversión en tu bienestar emocional. Existen diferentes opciones, desde terapias subvencionadas hasta modalidades de pago flexibles, que pueden hacerla accesible según tus necesidades.',
+        'El costo de la terapia puede variar, pero es una inversión en tu bienestar emocional. ',
     },
   ];
 
