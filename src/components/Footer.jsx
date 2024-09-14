@@ -5,15 +5,7 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white py-8">
       <div className="container mx-auto text-center">
         <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
-          <a href="#" className="text-gray-400 hover:text-white transition-colors">
-            About
-          </a>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors">
-            Services
-          </a>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors">
-            Contact
-          </a>
+
         </div>
         <div className="mt-4 text-gray-400">
           <p>&copy; {new Date().getFullYear()} Ansiosamente. Todos los derechos reservados.</p>

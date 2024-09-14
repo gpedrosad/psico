@@ -45,7 +45,7 @@ const CounterEffect = () => {
       <h2 className="text-2xl md:text-4xl font-bold text-center mb-6 md:mb-8">
         Sesiones realizadas
       </h2>
-      <div className="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-12">
+      <div className="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-12 m-10">
         {/* Contenedor de horas agendadas */}
         <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg text-center">
           <div className="text-4xl md:text-6xl font-extrabold mb-2">

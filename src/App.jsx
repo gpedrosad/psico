@@ -27,7 +27,7 @@ function Home() {
     <CounterEffect/>
     <BulletTerapia/>
     <AboutMeTerapia/>
-    <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+    <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 mb-10">
         Agendar
       </button>
     <ServicioTerapia/>
@@ -37,10 +37,10 @@ function Home() {
 <section className="bg-gray-50 py-12">
   <div className="max-w-5xl mx-auto text-center">
     <h2 className="text-4xl font-bold mb-6">¿Te sientes identificado con estos problemas?</h2>
-    <p className="text-lg text-gray-700 mb-8">
-      Si experimentas alguno de estos síntomas, podemos ayudarte a superar la ansiedad y la depresión:
+    <p className="text-lg text-gray-700 mb-8 p-5">
+      Si experimentas alguno de estos síntomas, puedo ayudarte a superar la ansiedad y la depresión:
     </p>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 m-4">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 m-4 p-5">
       <div className="p-4 bg-white shadow-lg rounded-lg">
         <h3 className="text-2xl font-bold mb-2">Tristeza constante</h3>
         <p>Sentimientos de desesperanza y pérdida de interés en las actividades que solías disfrutar.</p>
@@ -60,7 +60,7 @@ function Home() {
 
 <section className="flex flex-col items-center py-12 bg-blue-100">
   <h2 className="text-4xl font-bold mb-4">No esperes más para sentirte mejor</h2>
-  <p className="text-lg text-gray-700 mb-6">
+  <p className="text-lg text-gray-700 mb-6 p-2">
     Estoy aquí para acompañarte en tu camino a sentirte mejor. Haz el primer paso hoy mismo.
   </p>
   <button className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-700">
