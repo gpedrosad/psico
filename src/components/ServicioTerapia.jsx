@@ -20,7 +20,7 @@ const steps = [
 ];
 
 const ServicioTerapia = () => (
-  <div className="bg-gray-100 p-6 md:p-8 rounded-lg shadow-lg max-w-4xl mx-auto">
+  <div className="bg-gray-100 p-10 md:p-8 rounded-lg shadow-lg max-w-4xl mx-auto mt-10 mb-10">
     <h1 className="text-2xl md:text-3xl font-bold text-center text-blue-600 mb-6">
         Cómo es ir a terapia?
     </h1>

@@ -41,7 +41,7 @@ const CounterEffect = () => {
   }, []);
 
   return (
-    <div className="bg-gray-50 py-6 md:py-10">
+    <div className="bg-gray-100 py-6 md:py-10">
       <h2 className="text-2xl md:text-4xl font-bold text-center mb-6 md:mb-8">
         Sesiones realizadas
       </h2>
