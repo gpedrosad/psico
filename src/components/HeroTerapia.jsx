@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const HeroTerapia = () => {
   return (
     <div className="flex flex-col items-center p-8 bg-gray-100">
@@ -20,7 +21,7 @@ const HeroTerapia = () => {
         <div className="flex-1 p-8">
         <div className="relative w-full h-auto">
           <img 
-            src="public/images/yo.png" 
+            src="images/yo.png" 
             alt="Hero Image" 
             className="w-full h-auto object-cover rounded-2xl"
           />
