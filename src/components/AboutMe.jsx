@@ -41,7 +41,7 @@ const AboutMe = () => {
           </h2>
           <div ref={imgRef} className="mb-6 opacity-0">
             <img
-              src="https://via.placeholder.com/300"
+              src="images/yoo.jpg"
               alt="Foto de perfil"
               className="rounded-full shadow-lg w-48 h-48 object-cover"
             />

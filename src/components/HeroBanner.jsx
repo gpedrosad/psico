@@ -20,7 +20,7 @@ const HeroBanner = () => {
         <div className="flex-1 p-8">
         <div className="relative w-full h-auto">
   <img 
-    src="public/images/yo.webp" 
+    src="images/yo.webp" 
     alt="Hero Image" 
     className="w-full h-auto object-cover rounded-2xl"
   />
