@@ -17,6 +17,8 @@ import BeneficiosTerapia from './components/BeneficiosTerapia'
 import FAQTerapia from './components/FAQTerapia'
 import AboutMeTerapia from './components/AboutMeTerapia'
 import HeroTerapia from './components/HeroTerapia'
+import Review from './components/Review';  // Importa el nuevo componente
+
 
 // Página principal vacía
 function Home() {
@@ -95,18 +97,17 @@ function Servicio() {
   )
 }
 
+// Función principal con rutas
 function App() {
   return (
     <Router>
       <Routes>
-        {/* Ruta principal */}
         <Route path="/" element={<Home />} />
-        
-        {/* Ruta /servicio con todos los componentes */}
         <Route path="/servicio" element={<Servicio />} />
+        <Route path="/review" element={<Review />} /> {/* Nueva ruta para /review */}
       </Routes>
     </Router>
-  )
+  );
 }
 
 export default App

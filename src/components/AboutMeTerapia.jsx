@@ -49,15 +49,11 @@ const AboutMeTerapia = () => {
           <div ref={textRef} className="md:w-3/4 opacity-0">
             <p className="text-xl text-gray-700 mb-4">Hola, soy Gonzalo.</p>
             <p className="text-lg text-gray-700 mb-4 text-left">
-              Soy <strong>Psicólogo Clínico</strong>, estudiante de Desarrollo de Software y entusiasta del Marketing.
+              Soy <strong>Psicólogo Clínico</strong> con más de 7 años de experiencia dedicado a <strong>Terapia Cognitivo Conductual</strong>. Ayudo a personas a superar la <strong>ansiedad</strong> y la <strong>depresión</strong>, y a reconectar con su bienestar emocional.
             </p>
             <p className="text-lg text-gray-700 mb-4 text-left">
-              Nací en Chile y ahora vivo en Buenos Aires atendiendo de forma online.
+              Mi enfoque se centra en acompañarte y que puedas recuperar el control de tu vida.
             </p>
-            <p className="text-lg text-gray-700 mb-4 text-left">
-              Tengo mi propia consulta online, pero lo más importante es que <strong>ayudo a otros a convertirse en profesionales independientes</strong>.
-            </p>
-            
           </div>
         </div>
       </div>
