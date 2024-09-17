@@ -1,16 +1,38 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 const Review = () => {
   const [name, setName] = useState('');
   const [city, setCity] = useState('');
   const [comment, setComment] = useState('');
+  const [emailStatus, setEmailStatus] = useState(''); // Estado para el resultado del envío de email
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Nombre:', name);
-    console.log('Ciudad:', city);
-    console.log('Comentario:', comment);
-    // Aquí podrías manejar el envío de la reseña (e.g., API, base de datos, etc.)
+
+    const templateParams = {
+      name,
+      city,
+      comment,
+    };
+
+    emailjs
+      .send('service_nq7yg9k', 'template_wb0kpic', templateParams, 'LTywyQvKU3ya4QAVu') // Reemplaza 'YOUR_USER_ID' con tu ID de usuario
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          setEmailStatus('Reseña enviada exitosamente. ¡Gracias por tu opinión!');
+        },
+        (error) => {
+          console.log('FAILED...', error);
+          setEmailStatus('Ocurrió un error al enviar la reseña. Inténtalo nuevamente.');
+        }
+      );
+
+    // Limpiar el formulario
+    setName('');
+    setCity('');
+    setComment('');
   };
 
   return (
@@ -40,7 +62,7 @@ const Review = () => {
       {/* Formulario de reseñas */}
       <div className="w-full max-w-md bg-white p-6 rounded-lg shadow-md mb-32">
         <form onSubmit={handleSubmit}>
-          <div className="mb-4 text-left"> {/* Alineación a la izquierda */}
+          <div className="mb-4 text-left">
             <label className="block text-gray-700 text-lg font-bold mb-2" htmlFor="name">
               Nombre
             </label>
@@ -55,7 +77,7 @@ const Review = () => {
             />
           </div>
 
-          <div className="mb-4 text-left"> {/* Alineación a la izquierda */}
+          <div className="mb-4 text-left">
             <label className="block text-gray-700 text-lg font-bold mb-2" htmlFor="city">
               Ciudad
             </label>
@@ -70,7 +92,7 @@ const Review = () => {
             />
           </div>
 
-          <div className="mb-4 text-left"> {/* Alineación a la izquierda */}
+          <div className="mb-4 text-left">
             <label className="block text-gray-700 text-lg font-bold mb-2" htmlFor="comment">
               Comentario
             </label>
@@ -94,6 +116,9 @@ const Review = () => {
             </button>
           </div>
         </form>
+
+        {/* Estado del envío de email */}
+        {emailStatus && <p className="text-center text-green-500 mt-4">{emailStatus}</p>}
       </div>
     </div>
   );
