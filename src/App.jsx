@@ -18,6 +18,7 @@ import FAQTerapia from './components/FAQTerapia'
 import AboutMeTerapia from './components/AboutMeTerapia'
 import HeroTerapia from './components/HeroTerapia'
 import Review from './components/Review';  // Importa el nuevo componente
+import ReviewsTerapia from './components/ReviewsTerapia'
 
 
 // Página principal vacía
@@ -34,6 +35,7 @@ function Home() {
       </button>
     <ServicioTerapia/>
     <BeneficiosTerapia/>
+    <ReviewsTerapia/>
     <FAQTerapia/>
 
 <section className="bg-gray-50 py-12">
