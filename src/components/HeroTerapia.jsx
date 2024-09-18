@@ -36,9 +36,12 @@ const HeroTerapia = () => {
           <p className="text-lg text-gray-700 mb-4">
             Terapia profesional para superar la depresión y la ansiedad
           </p>
-          <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">
-            Agenda tu consulta ahora
-          </button>
+          <a
+  href="https://walink.co/6626d8"
+  className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 inline-block"
+>
+  Agenda tu consulta ahora
+</a>
         </div>
 
         {/* Segunda Columna (Imagen) */}

@@ -30,9 +30,12 @@ function Home() {
     <CounterEffect/>
     <BulletTerapia/>
     <AboutMeTerapia/>
-    <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 mb-10">
-        Agendar
-      </button>
+    <button
+  className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 mb-10"
+  onClick={() => window.location.href = 'https://walink.co/6626d8'}
+>
+  Agendar
+</button>
     <ServicioTerapia/>
     <BeneficiosTerapia/>
     <ReviewsTerapia/>
@@ -67,9 +70,12 @@ function Home() {
   <p className="text-lg text-gray-700 mb-6 p-2">
     Estoy aquí para acompañarte en tu camino a sentirte mejor. Haz el primer paso hoy mismo.
   </p>
-  <button className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-700">
-    Agenda tu primera sesión
-  </button>
+  <button
+  className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-700"
+  onClick={() => window.location.href = 'https://walink.co/6626d8'}
+>
+  Agenda tu primera sesión
+</button>
 </section>
 <Footer/>
     </>
