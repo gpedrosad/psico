@@ -32,7 +32,10 @@ function Home() {
     <AboutMeTerapia/>
     <button
   className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 mb-10"
-  onClick={() => window.location.href = 'https://walink.co/6626d8'}
+  onClick={() => {
+    fbq('track', 'Contact'); // Evento de conversión para "Contact"
+    window.location.href = 'https://walink.co/6626d8'; // Redirigir al enlace de WhatsApp
+  }}
 >
   Agendar
 </button>
