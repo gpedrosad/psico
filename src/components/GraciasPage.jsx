@@ -5,6 +5,11 @@ const GraciasPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    // Disparar el evento de conversión de Facebook Pixel
+    if (window.fbq) {
+      window.fbq('track', 'CompleteRegistration'); // Cambia 'Lead' por el evento que desees rastrear (ejemplo: 'CompleteRegistration')
+    }
+
     // Redirigir después de 15 segundos
     const timer = setTimeout(() => {
       navigate('/servicio'); // Redirige a la página de servicio en 15 segundos
