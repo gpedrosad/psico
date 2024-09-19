@@ -5,9 +5,11 @@ const GraciasPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Disparar el evento de conversión de Facebook Pixel
-    if (window.fbq) {
-      window.fbq('track', 'Subscribe'); // Cambia 'Lead' por el evento que desees rastrear (ejemplo: 'CompleteRegistration')
+    // Asegurarse de que fbq esté definido antes de intentar llamar al evento
+    if (typeof window.fbq !== 'undefined') {
+      window.fbq('track', 'Subscribe'); // Disparar el evento de suscripción
+    } else {
+      console.error('Facebook Pixel no está disponible');
     }
 
     // Redirigir después de 15 segundos
