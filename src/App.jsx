@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import './App.css';
 import Bullet from './components/Bullet.jsx';
 import FAQ from './components/FAQ';
@@ -44,7 +44,6 @@ function Home() {
   return (
     <>
       <HeroTerapia />
-      {/*<MarqueeText />*/}
       <CounterEffect />
       <BulletTerapia />
       <AboutMeTerapia />
@@ -112,20 +111,43 @@ function Servicio() {
       <BenefitsSection />
       <Testimonials />
       <a
-  href="https://calendly.com/gpedrosadom/30min"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 inline-block"
->
-  Agendar asesoría gratuita
-</a>
+        href="https://calendly.com/gpedrosadom/30min"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 inline-block"
+      >
+        Agendar asesoría gratuita
+      </a>
       <ForYouSection />
       <CalendlyEmbed />
-      {/* <MarqueeText />*/}
-      {/*<Pricing />*/}
       <FAQ />
       <Footer />
     </>
+  );
+}
+
+// Página de "Gracias"
+function GraciasPage() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigate('/servicio'); // Redirige a la página de servicios después de 15 segundos
+    }, 15000);
+
+    return () => clearTimeout(timer); // Limpiar el timeout si el componente se desmonta
+  }, [navigate]);
+
+  return (
+    <div className="flex flex-col items-center justify-center h-screen bg-gray-100 text-center">
+      <h1 className="text-4xl font-bold mb-4">¡Gracias por agendar con nosotros!</h1>
+      <p className="text-lg text-gray-700 mb-4">
+        Te has registrado con éxito. Serás redirigido en 15 segundos a la página de servicios.
+      </p>
+      <p className="text-sm text-gray-500">
+        Si no te redirige automáticamente, haz clic <a href="/servicio" className="text-blue-600 underline">aquí</a>.
+      </p>
+    </div>
   );
 }
 
@@ -137,6 +159,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/servicio" element={<Servicio />} />
         <Route path="/review" element={<Review />} /> {/* Nueva ruta para /review */}
+        <Route path="/gracias" element={<GraciasPage />} /> {/* Nueva página de gracias */}
       </Routes>
     </Router>
   );
