@@ -7,7 +7,7 @@ const GraciasPage = () => {
   useEffect(() => {
     // Disparar el evento de conversión de Facebook Pixel
     if (window.fbq) {
-      window.fbq('track', 'CompleteRegistration'); // Cambia 'Lead' por el evento que desees rastrear (ejemplo: 'CompleteRegistration')
+      window.fbq('track', 'Subscribe'); // Cambia 'Lead' por el evento que desees rastrear (ejemplo: 'CompleteRegistration')
     }
 
     // Redirigir después de 15 segundos
