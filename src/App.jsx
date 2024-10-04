@@ -109,7 +109,7 @@ function Servicio() {
       <Bullet />
       <AboutMe />
       <BenefitsSection />
-      <Testimonials />
+      {/*<Testimonials />*/}
       <a
         href="https://calendly.com/gpedrosadom/30min"
         target="_blank"
